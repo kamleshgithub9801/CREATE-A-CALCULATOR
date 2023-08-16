@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>calculator App</title>
+    </head>
+    <body>
+        <div class="calculator">
+            <form name="calc">
+                <textarea name="history" class="history" readonly></textarea>
+                <textarea name="equation" class="equation active" readonly autofocus></textarea>
+                <input type="text" name="text" class="inputVal" placeholder="0" readonly>
+            </form>
+            <div class="buttons">
+                <button class="btn operator" value="%"><i class="fa-solid fa-percent"></i></button>
+
+                <button class="btn operator" value="AC">AC</button>
+                <button class="btn operator" value="C">C</button>
+                <button class="btn operator" value="back"><i class="fa-solid fa-delete-left"></i></button>
+                
+                <button class="btn operator" value="/"><i class="fa-solid fa-divide"></i></button>
+                
+                <button class="btn" value="7">7</button>
+                <button class="btn" value="8">8</button>
+                <button class="btn" value="9">9</button>
+                <button class="btn operator" value="*"><i class="fa-solid fa-xmark"></i></button>
+
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+                <button class="btn" value="6">6</button>
+                <button class="btn operator" value="-"><i class="fa-solid fa-minus"></i></button>
+
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn operator" value="+"><i class="fa-solid fa-plus"></i></button>
+
+                <button class="btn" value=".">.</button>
+                <button class="btn" value="0">0</button>
+                
+                <button class="btn equales operator" value="="><i class="fa-solid fa-equals"></i></button>
+            </div>
+        </div>
+    
+        <script src="main.js"></script>
+    </body>
+</html>

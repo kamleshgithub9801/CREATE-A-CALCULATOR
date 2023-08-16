@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'verdana',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.calculator{
+    height: 560px;
+    width: 305px;
+    padding-top: 10px;
+    margin: 50px auto;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(102, 102, 102, 0.25);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.calculator input, .calculator textarea{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    text-align: right;
+    font-size: 18px;
+    color: #999;
+}
+
+.calculator input{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.equation, .history{
+    resize: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.calculator .equation{
+    height: 70px;
+    padding-top: 35px;
+}
+
+.calculator .history{
+    height: 100px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.equation::-webkit-scrollbar {
+    display: none;
+}
+
+.calculator .active{
+    font-size: 28px;
+    color: #000;
+}
+
+.calculator .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons .btn{
+    width: 75px;
+    height: 65px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(15, 15, 15);
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+.buttons .operator{
+    font-family: "Font Awesome 6 Free";
+    color: rgb(255, 102, 0);
+}
+
+.buttons .btn:nth-of-type(4n+4){
+    border-right: none;
+}
+
+.buttons .btn:nth-of-type(4n+1){
+    border-left: none;
+}
+
+.buttons .btn:nth-of-type(n+17){
+    border-bottom: none;
+}
+
+.buttons .btn:hover{
+    transition: 0s;
+    background: #dadada6b;
+}
+
+.buttons .operator{
+    font-size: 20px;
+}
